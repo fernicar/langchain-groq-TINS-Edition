@@ -10,9 +10,9 @@ The primary goal of this README is to provide insight into the development proce
 
 The project started with a detailed specification for the application, formatted according to the TINS guidelines. Instead of writing code manually, the core task posed to the AI assistant was:
 
-> "Understand what [TINS](https://github.com/ScuffedEpoch/TINS) is by reading: `TINS.md`, `specification.md`, `developer-guide.md`, `best-practices.md`, and the example `todo-app-example.md`
+> "Understand what [TINS](https://github.com/ScuffedEpoch/TINS) is by reading: [`TINS.md`](https://github.com/ScuffedEpoch/TINS/blob/main/README.md), [`specification.md`](https://github.com/ScuffedEpoch/TINS/blob/main/docs/specification.md), [`developer-guide.md`](https://github.com/ScuffedEpoch/TINS/blob/main/docs/developer-guide.md), [`best-practices.md`](https://github.com/ScuffedEpoch/TINS/blob/main/docs/best-practices.md), and the example `todo-app-example.md`
 >
-> Make the source code of my Desktop App following the `README.md`"
+> Make the source code of my Desktop App following the [`README.md`](https://github.com/fernicar/langchain-groq-TINS-Edition/blob/main/tins_edition/README.md)"
 
 *(This initial prompt is captured below for context, with the 7 attached .md files above it)*
 
@@ -83,7 +83,8 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Acknowledgments
 
-*   Special thanks to the AI assistant for its initial contribution to the project.
+*   Special thanks to ScuffedEpoch for the TINS methodology and the initial example.
+*   Thanks to the free tier AI assistant for its initial contribution to the project.
 *   Gratitude to the Groq team for their API and support.
 *   Thanks to the Langchain and PySide6 communities for their respective libraries and documentation.
 *   Augment extension for VS Code
