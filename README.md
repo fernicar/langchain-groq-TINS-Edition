@@ -44,21 +44,21 @@ The AI assistant processed the comprehensive TINS specification and generated th
 
 While the AI provided a significant foundation, transforming the generated code into a runnable and repository-ready state required manual intervention and debugging using VS Code. Key steps taken included:
 
+*   **Version Control:** Performed the initial Git commit (`git init`, `git add .`, `git commit -m "initial commit of AI-generated code and basic fixes"`) to establish the project baseline in this repository.
+*   **Dependency Resolution:** Identified and fixed missing import statements within the Python files (e.g., ensuring specific `from datetime import datetime` components were explicitly imported where needed) based on errors encountered during initial execution attempts.
+*   **UI Refinements:** Renamed UI Tab labels for better clarity and conciseness (e.g., changing `Save Blue & Continue` to `Commit Blue && Continue`). Adjusted other UI element labels as needed during initial testing.
 *   **Licensing:** Added an `MIT License` file (`LICENSE`) to define clear usage rights for the code.
 *   **Documentation & Visualization:** Prepared this `README.md` file, outlining the process and adding placeholders for relevant screenshots. Captured images of the development process and the application itself (to be added below).
-    *   ![APP_SCREENSHOT](https://github.com/fernicar/langchain-groq-TINS-Edition/blob/main/images/app_capture.png)
-*   **UI Refinements:** Renamed UI Tab labels for better clarity and conciseness (e.g., changing `Save Blue & Continue` to `Commit Blue && Continue`). Adjusted other UI element labels as needed during initial testing.
-*   **Dependency Resolution:** Identified and fixed missing import statements within the Python files (e.g., ensuring specific `from datetime import datetime` components were explicitly imported where needed) based on errors encountered during initial execution attempts.
-*   **Version Control:** Performed the initial Git commit (`git init`, `git add .`, `git commit -m "initial commit of AI-generated code and basic fixes"`) to establish the project baseline in this repository.
+![APP_SCREENSHOT](https://github.com/fernicar/langchain-groq-TINS-Edition/blob/main/images/app_capture.png)
 
 ## TINS in Practice - A Reflection
 
-This project serves as a practical example of the TINS methodology in action. The detailed `README.md` acted as the "source," which the AI interpreted to generate the implementation.
+This project serves as a practical example of the [TINS](https://github.com/ScuffedEpoch/TINS) methodology in action. The detailed [`README.md`](https://github.com/fernicar/langchain-groq-TINS-Edition/blob/main/tins_edition/README.md) acted as the "source," which the AI interpreted to generate the implementation.
 
 **Key Takeaways:**
 
 *   **Acceleration:** Using a detailed TINS specification allowed the AI to generate a complex application structure rapidly, saving significant initial development time.
-*   **Human-in-the-Loop:** AI code generation, even from detailed specs, often requires human oversight for debugging, refinement, platform-specific nuances (like GUI event loops vs. blocking calls), and ensuring adherence to best practices.
+*   **Human-in-the-Loop:** Implement Test-Driven Development (TDD) TINS, AI code generation, even from detailed specs, often requires human oversight for debugging, refinement, platform-specific nuances (like GUI event loops vs. blocking calls), and ensuring adherence to best practices.
 *   **Specification is Key:** The quality of the generated code is highly dependent on the clarity, detail, and consistency of the TINS `README.md`. Ambiguities in the spec can lead to unexpected or incorrect implementations.
 *   **Potential:** The TINS approach, combined with capable AI assistants, shows promise for streamlining software development, especially for well-defined applications. It shifts focus from writing boilerplate code to designing and specifying robustly.
 
