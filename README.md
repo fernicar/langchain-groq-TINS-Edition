@@ -10,13 +10,15 @@ The primary goal of this README is to provide insight into the development proce
 
 The project started with a detailed specification for the application, formatted according to the TINS guidelines. Instead of writing code manually, the core task posed to the AI assistant was:
 
-> "Understand what TINS is by reading: `TINS.md`, `specification.md`, `developer-guide.md`, `best-practices.md`, and the example `todo-app-example.md`. Make the source code of my Desktop App following the `README.md` [for the Narrative Collaboration System]."
+> "Understand what [TINS](https://github.com/ScuffedEpoch/TINS) is by reading: `TINS.md`, `specification.md`, `developer-guide.md`, `best-practices.md`, and the example `todo-app-example.md`
+>
+> Make the source code of my Desktop App following the `README.md`"
 
-*(This initial prompt is captured below for context)*
+*(This initial prompt is captured below for context, with the 7 attached .md files above it)*
 
 ![SCREENSHOT_PROMPT](https://github.com/fernicar/langchain-groq-TINS-Edition/blob/main/images/llm_request.png)
 
-This involved the AI parsing not only the application's specific `README.md` (which defined its functionality, UI using Mermaid diagrams, technical architecture, data models, etc.) but also understanding the underlying principles of TINS itself from the provided documentation. The specification was non-trivial, outlining a multi-pane UI, interaction logic, state management using a custom dual-state memory, system prompt handling, and integration with the Groq API via Langchain.
+This involved the AI parsing not only the application's specific [`README.md`](https://github.com/fernicar/langchain-groq-TINS-Edition/blob/main/tins_edition/README.md) (which defined its functionality, UI using Mermaid diagrams, technical architecture, data models, etc.) but also understanding the underlying principles of [TINS](https://github.com/ScuffedEpoch/TINS) itself from the provided documentation files from the repository and one example. The specification was non-trivial, outlining a multi-pane UI, interaction logic, state management using a custom dual-state memory, system prompt handling, and integration with the Groq API via Langchain.
 
 ## The AI's Response: Code Generation Based on TINS
 
@@ -45,9 +47,9 @@ While the AI provided a significant foundation, transforming the generated code 
 *   **Licensing:** Added an `MIT License` file (`LICENSE`) to define clear usage rights for the code.
 *   **Documentation & Visualization:** Prepared this `README.md` file, outlining the process and adding placeholders for relevant screenshots. Captured images of the development process and the application itself (to be added below).
     *   ![APP_SCREENSHOT](https://github.com/fernicar/langchain-groq-TINS-Edition/blob/main/images/app_capture.png)
-*   **UI Refinements:** Renamed UI Tab labels for better clarity and conciseness (e.g., changing `Save Blue & Continue` to `Save && Continue`). Adjusted other UI element labels as needed during initial testing.
-*   **Dependency Resolution:** Identified and fixed missing import statements within the Python files (e.g., ensuring specific `PySide6.QtGui` or `langchain_core` components were explicitly imported where needed) based on errors encountered during initial execution attempts.
-*   **Version Control:** Performed the initial Git commit (`git init`, `git add .`, `git commit -m "Initial commit of AI-generated code and basic fixes"`) to establish the project baseline in this repository.
+*   **UI Refinements:** Renamed UI Tab labels for better clarity and conciseness (e.g., changing `Save Blue & Continue` to `Commit Blue && Continue`). Adjusted other UI element labels as needed during initial testing.
+*   **Dependency Resolution:** Identified and fixed missing import statements within the Python files (e.g., ensuring specific `from datetime import datetime` components were explicitly imported where needed) based on errors encountered during initial execution attempts.
+*   **Version Control:** Performed the initial Git commit (`git init`, `git add .`, `git commit -m "initial commit of AI-generated code and basic fixes"`) to establish the project baseline in this repository.
 
 ## TINS in Practice - A Reflection
 
