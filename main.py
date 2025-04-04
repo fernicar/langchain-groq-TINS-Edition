@@ -1,6 +1,7 @@
 import sys
 import os
 import json
+from datetime import datetime
 from pathlib import Path
 from typing import List, Optional, Tuple
 
@@ -20,9 +21,9 @@ from PySide6.QtGui import QAction, QKeySequence, QTextCursor, QColor, QShortcut
 from PySide6.QtCore import Qt, Slot, QSize, QSettings # Added QSettings
 
 # Import Langchain & Groq Components
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, SystemMessage, HumanMessage
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_core.messages import AIMessage
 from langchain_groq import ChatGroq
 import groq # For listing models and API key check
 
