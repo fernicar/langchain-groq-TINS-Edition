@@ -545,7 +545,7 @@ class MainWindow(QMainWindow):
         guidance = ""
         action_type = None # 'continue', 'rewrite', 'edit_commit', 'edit_discard'
 
-        if tab_text == "Save Blue & Continue":
+        if tab_text == "Commit Blue && Continue":
             if self._is_dirty: # Commit if there's uncommitted blue text
                 self._handle_commit() # Commit first
             guidance = self.continue_input.toPlainText().strip()
@@ -553,7 +553,7 @@ class MainWindow(QMainWindow):
             action_type = 'continue'
             # Commit happens implicitly before sending if needed
 
-        elif tab_text == "Discard Blue & Rewrite":
+        elif tab_text == "Discard Blue && Rewrite":
             self._handle_discard() # Discard first
             guidance = self.rewrite_input.toPlainText().strip()
             self.rewrite_input.clear()
