@@ -306,7 +306,7 @@ class MainWindow(QMainWindow):
         edit_blue_tab = QWidget()
         edit_blue_layout = QVBoxLayout(edit_blue_tab)
         self.edit_input = QTextEdit()
-        self.edit_input.setPlaceholderText("Directly edit the current blue text proposal here. Changes are live.\nUse buttons below or 'Save Blue & Continue' tab to proceed.")
+        self.edit_input.setPlaceholderText("Directly edit the current blue text proposal here. Changes are live.\nUse buttons below or 'Commit Blue & Continue' tab to proceed.")
         self.edit_input.textChanged.connect(self._handle_edit_blue_text) # Connect live edit
         edit_blue_layout.addWidget(self.edit_input)
         edit_buttons_layout = QHBoxLayout()
@@ -319,13 +319,13 @@ class MainWindow(QMainWindow):
         edit_blue_layout.addLayout(edit_buttons_layout)
         self.input_tabs.addTab(edit_blue_tab, "Edit Blue")
 
-        # Save Blue & Continue Tab
+        # Commit Blue & Continue Tab
         continue_tab = QWidget()
         continue_layout = QVBoxLayout(continue_tab)
         self.continue_input = QTextEdit()
         self.continue_input.setPlaceholderText("Enter guidance for the *next* section of the story here.\nClicking 'Send' (or Ctrl+Enter) will first commit the current blue text, then generate the continuation based on your input.")
         continue_layout.addWidget(self.continue_input)
-        self.input_tabs.addTab(continue_tab, "Save Blue & Continue")
+        self.input_tabs.addTab(continue_tab, "Commit Blue && Continue")
 
         # Discard Blue & Rewrite Tab
         rewrite_tab = QWidget()
