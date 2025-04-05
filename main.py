@@ -333,7 +333,7 @@ class MainWindow(QMainWindow):
         self.rewrite_input = QTextEdit()
         self.rewrite_input.setPlaceholderText("Enter guidance for *rewriting* the blue text proposal here.\nClicking 'Send' (or Ctrl+Enter) will first discard the current blue text, then generate a new proposal based on your input.")
         rewrite_layout.addWidget(self.rewrite_input)
-        self.input_tabs.addTab(rewrite_tab, "Discard Blue & Rewrite")
+        self.input_tabs.addTab(rewrite_tab, "Discard Blue && Rewrite")
 
         # Customize System Prompt Tab
         system_prompt_tab = QWidget()
